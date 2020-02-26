@@ -16,7 +16,7 @@ https:\/\/www\.kxdao\.net\/home\.php\?mod=space url script-request-header Kxdao_
 */
 
 var bonus = {
-  url: 'https://www.kxdao.net/plugin.php?id=dsu_amupper&ppersubmit=true&formhash=c7f9d7c1&infloat=yes&handlekey=dsu_amupper&inajax=1&ajaxtarget=fwin_content_dsu_amupper',
+  url: 'https://www.kxdao.net/plugin.php?id=dsu_amupper&ppersubmit=true&formhash=c7f9d7c1&infloat=yes',
   headers: {
     "Cookie": $prefs.valueForKey("CookieWA"),
   }
