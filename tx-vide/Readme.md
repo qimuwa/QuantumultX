@@ -1,12 +1,11 @@
-[MITM]
-*.video.qq.com, v.qq.com
+#配置
+[MITM] *.video.qq.com, v.qq.com
 
 [rewrite_local]
-^https:\/\/access.video.qq.com\/user\/auth_refresh url script-request-header videoqq.cookie.js
-^https?:\/\/v.qq.com\/x\/bu\/mobile_checkin url script-request-header videoqq.cookie.js
+^https://access.video.qq.com/user/auth_refresh url script-request-header videoqq.cookie.js
+^https?://v.qq.com/x/bu/mobile_checkin url script-request-header videoqq.cookie.js
 
-[task_local]
-1 0 * * * videoqq.js
+[task_local] 1 0 * * * videoqq.js
 
 1.先把v.qq.com加到[MITM]
 2.手机浏览器访问下: https://film.qq.com/ 随便选 1 部电影观看
