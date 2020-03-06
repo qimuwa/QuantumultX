@@ -12,6 +12,8 @@
 
 `1 0 * * * videoqq.js`
 
+# 说明
+
 1. 先把v.qq.com加到[MITM]
 2. 手机浏览器访问下: https://film.qq.com/ 随便选 1 部电影观看
 3. 手机浏览器访问下: http://v.qq.com/x/bu/mobile_checkin 页面提示提示签到成功, 系统提示: 获取Cookie: 成功 （为保成功率，请刷新一下页面再获取一次）
