@@ -1,12 +1,15 @@
 # 配置
 [MITM]
-`*.video.qq.com, v.qq.com`
+
+*.video.qq.com, v.qq.com
 
 [rewrite_local]
-`^https://access.video.qq.com/user/auth_refresh url script-request-header videoqq.cookie.js
-^https?://v.qq.com/x/bu/mobile_checkin url script-request-header videoqq.cookie.js`
+
+^https://access.video.qq.com/user/auth_refresh url script-request-header videoqq.cookie.js
+^https?://v.qq.com/x/bu/mobile_checkin url script-request-header videoqq.cookie.js
 
 [task_local]
+
 `1 0 * * * videoqq.js`
 
 1. 先把v.qq.com加到[MITM]
